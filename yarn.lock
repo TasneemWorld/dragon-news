@@ -832,6 +832,11 @@
   dependencies:
     tslib "^2.4.0"
 
+"@types/lodash@^4.14.105":
+  version "4.14.194"
+  resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.194.tgz"
+  integrity sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==
+
 "@types/long@^4.0.1":
   version "4.0.2"
   resolved "https://registry.npmjs.org/@types/long/-/long-4.0.2.tgz"
@@ -865,6 +870,15 @@
   version "18.0.38"
   resolved "https://registry.npmjs.org/@types/react/-/react-18.0.38.tgz"
   integrity sha512-ExsidLLSzYj4cvaQjGnQCk4HFfVT9+EZ9XZsQ8Hsrcn8QNgXtpZ3m9vSIC2MWtx7jHictK6wYhQgGh6ic58oOw==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^16.0.40":
+  version "16.14.40"
+  resolved "https://registry.npmjs.org/@types/react/-/react-16.14.40.tgz"
+  integrity sha512-elQj2VQHDuJ5xuEcn5Wxh/YQFNbEuPJFRKSdyG866awDm5dmtoqsMmuAJWb/l/qd2kDkZMfOTKygVfMIdBBPKg==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -2215,7 +2229,7 @@ react-bootstrap@^2.7.4:
     uncontrollable "^7.2.1"
     warning "^4.0.3"
 
-react-dom@^18.2.0, "react-dom@>= 16.8.0 || 18.0.0", react-dom@>=16.14.0, react-dom@>=16.6.0, react-dom@>=16.8:
+react-dom@^18.2.0, "react-dom@>= 16.8.0 || 18.0.0", react-dom@>=16.14.0, react-dom@>=16.3.0, react-dom@>=16.6.0, react-dom@>=16.8:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -2242,6 +2256,14 @@ react-lifecycles-compat@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmjs.org/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
+
+react-rating@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.npmjs.org/react-rating/-/react-rating-2.0.5.tgz"
+  integrity sha512-uldxgLCe5bzqGX7V+7/bPgQQj2Kok6eiMgTMxjKOhfhnQkFLDlc4TjMlp7gaJFAHWdbiOnqpiShI7z8as6oWtg==
+  dependencies:
+    "@types/lodash" "^4.14.105"
+    "@types/react" "^16.0.40"
 
 react-refresh@^0.14.0:
   version "0.14.0"
@@ -2273,7 +2295,7 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@*, "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", react@^18.2.0, "react@>= 16.8.0 || 18.0.0", react@>=0.14.0, react@>=15.0.0, react@>=16.14.0, react@>=16.6.0, react@>=16.8, react@>=16.8.0:
+react@*, "react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0", react@^18.2.0, "react@>= 16.8.0 || 18.0.0", react@>=0.14.0, react@>=15.0.0, react@>=16.14.0, react@>=16.3.0, react@>=16.6.0, react@>=16.8, react@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==

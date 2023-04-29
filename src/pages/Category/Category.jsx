@@ -10,7 +10,7 @@ const Category = () => {
 
     return (
         <div>
-            <h1>Category is comming: {categoryNews.length}</h1>
+            {id && <h5 className='mt-4 mb-2'> totla category of this news {categoryNews.length}</h5>}
             {
                 categoryNews.map(news => <NewsCard
                     key={news._id}
