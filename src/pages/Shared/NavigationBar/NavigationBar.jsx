@@ -6,7 +6,17 @@ import { FaUserCircle } from 'react-icons/fa';
 
 const NavigationBar = () => {
 
-    const {user} = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext);
+
+    const handelLogOut = () =>{
+        logOut()
+        .then(()=>{
+            console.log('successfully logout');
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+    }
 
     return (
         <Container>
@@ -23,10 +33,10 @@ const NavigationBar = () => {
                             {user && <Nav.Link href="#deets">
                                 <FaUserCircle style={{ fontSize: '2rem' }}></FaUserCircle>
                             </Nav.Link>}
-                            <Nav.Link eventKey={2} href="#memes">
-                                {user ? <Button variant="dark">LogOut</Button> :
+                            <Nav eventKey={2} href="#memes">
+                                {user ? <Button variant="dark" onClick={handelLogOut}>LogOut</Button> :
                                     <Link to='/login'><Button variant="dark">LogIn</Button></Link>}
-                            </Nav.Link>
+                            </Nav>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
