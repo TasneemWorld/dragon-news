@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 const LoginLayout = () => {
     return (
-        <div>
+        <div className= 'bg-light'  style={{height:'50vh'}}>
             <NavigationBar></NavigationBar>
             <Outlet></Outlet>
         </div>
